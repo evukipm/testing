@@ -1,0 +1,15 @@
+.about{
+  
+}
+.about-p{
+  width:70%;
+  margin:0 auto 50px;
+  text-align:left;
+  background:#fcfcfc;
+  padding:20px 30px;
+  border-radius:4px;
+  box-shadow:1px 4px 15px #161616;
+}
+.about-p span{
+  color:red;
+}

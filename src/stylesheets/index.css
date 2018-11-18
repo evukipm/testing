@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  color:rgb(34, 34, 34);
+  background-image: linear-gradient(to left bottom, #7a98dc, #7295cf, #6c92c2, #698eb4, #6989a6);
+}
+
+h1{
+  font-family: 'Bigshot One';
+  font-size:52px;
+}
+
+.button{
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
