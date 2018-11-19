@@ -7,6 +7,7 @@ That project it's for my personal portfolio, a kind of lab for testing and learn
 ### `Packages used`
 
 - *react-router-dom*
+- *react-pose*
 
 ## Learn More
 
