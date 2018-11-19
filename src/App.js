@@ -17,10 +17,10 @@ class App extends Component {
           <div>
             <Navbar />
             <PoseGroup>
-              <RouteContainer key={location.key}>
-                <Switch>
-                  <Route exact path='/' component={Intro} key="home" />
-                  <Route exact path='/about' component={About} key="about" />
+              <RouteContainer key={location.pathname}>
+                <Switch location={location}>
+                  <Route exact path='/' component={Intro} key="homepage" />
+                  <Route exact path='/about' component={About} key="aboutpage" />
                 </Switch>
               </RouteContainer>
             </PoseGroup>

@@ -36,10 +36,9 @@ const Intro = props => (
             <Icon url={"https://dev.to/evukipm"} iconUrl={devIcon} alt={"dev.to icon"} />
           </IconsDrag>
         </div>
-      </IntroChild> 
+      </IntroChild>
     </IntroBox>
   </div>
 );
 
 export default Intro;
-

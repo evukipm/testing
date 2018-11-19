@@ -57,7 +57,7 @@ export const AboutChild = posed.div({
 export const RouteContainer = posed.div({
   enter: { 
     opacity: '1',
-    delay: 200, 
+    delay: 300, 
     beforeChildren: true 
   },
   exit: { 
