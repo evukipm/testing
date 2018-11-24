@@ -1,33 +1,11 @@
-.container{
-  display:flex;
-  flex-direction: column;
-  height:90vh;
-  width:100vw;
-  max-height:100vh;
-  max-width:100vw;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top:10vh;
-  left:0;
-  overflow:hidden;
-}
-
 /* ---- INTRO ---- */
-.intro{
-
-}
-.icon-list{
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content: space-around;
-}
-.icon-list a{
-  display:block;
-  padding:15px;
-}
 .icon{
-  width:50px;
-  fill:#fff!important;
+  width:60px;
+  padding:20px;
 }
+.intro input{
+  background:#000;
+  color:var(--yellow);
+}
+
 

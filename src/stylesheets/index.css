@@ -1,22 +1,103 @@
+:root{
+  --yellow:#F1F42E;
+  --red:#ba1d1d;
+}
 body {
   margin: 0;
   padding: 0;
   width:100vw;
   height:100vh;
   overflow:hidden;
-  color:rgb(34, 34, 34);
-  background-image: linear-gradient(to left bottom, #7a98dc, #7295cf, #6c92c2, #698eb4, #6989a6);
+  color:#0a0a0a;
+  transition: 1s;
+}
+
+.intro{
+  background-image: linear-gradient(to left bottom, #2a364a, #303a4f, #363d54, #3d4159, #44445e);
+  transition: 1s;
+}
+
+.intention{
+  background-image: linear-gradient(to left bottom, #283446, #2E374A, #343A4E, #3B3F54, #424258);
+  transition: 1s;
+}
+
+.scared{
+  background-image: linear-gradient(to left bottom, #1D2533, #1F2533, #2A2F3F, #272A38, #2F2F3F);
+  transition: 1s;
 }
 
 h1{
-  font-family: 'Bigshot One';
-  font-size:52px;
+  font-family: 'trashed';
+  font-size:4em;
+  text-align:center;
+  color:var(--yellow);
+}
+
+h2{
+  font-family: 'trashed';
+  font-size:3em;
+  text-align:center;
+  color:var(--yellow);
+}
+
+h3{
+  font-family: 'murder';
+  font-size:2em;
+  color:var(--red);
+}
+
+input{
+  padding:10px;
+  border-radius: 6px;
+  outline:none;
+  border:none;
+}
+
+input:focus{
+  outline:none;
+}
+
+.invisible{
+  margin:0;
+  padding:0;
+  max-width: 0px;
+  max-height: 0px;
+}
+
+.block-image{
+  display:block;
+  margin:0 auto;
 }
 
 .button{
   background:none;
   border:none;
   cursor:pointer;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  width:100vw;
+  max-height:100vh;
+  max-width:100vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow:hidden;
+}
+
+@font-face {
+  font-family: 'trashed';
+  src: url('../fonts/zilap.ttf');
+}
+@font-face {
+  font-family: 'murder';
+  src: url('../fonts/murder.otf');
 }
 
 @-webkit-keyframes Gradient {

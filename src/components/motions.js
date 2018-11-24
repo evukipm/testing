@@ -8,10 +8,36 @@ export const IntroBox = posed.div({
   },
   exit: {
     x: '-100%',
-    staggerChildren: 20, 
+    staggerChildren: 20,
     staggerDirection: -1,
   },
-})
+});
+
+export const IntentionBox = posed.div({
+  enter: {
+    y: '0%',
+    beforeChildren: true,
+    staggerChildren: 100,
+  },
+  exit: {
+    y: '-100%',
+    staggerChildren: 20,
+    staggerDirection: -1,
+  },
+});
+
+export const ScaredBox = posed.div({
+  enter: {
+    y: '0%',
+    beforeChildren: true,
+    staggerChildren: 100,
+  },
+  exit: {
+    y: '100%',
+    staggerChildren: 20,
+    staggerDirection: -1,
+  },
+});
 
 export const IconsDrag = posed.div({
   hoverable: true,
@@ -28,7 +54,7 @@ export const IntroChild = posed.div({
   exit: {
     y: '-15',
   },
-})
+});
 
 export const AboutBox = posed.div({
   enter: {
@@ -40,10 +66,10 @@ export const AboutBox = posed.div({
   exit: {
     x: '100%',
     opacity: 0,
-    staggerChildren: 20, 
+    staggerChildren: 20,
     staggerDirection: -1,
   },
-})
+});
 
 export const AboutChild = posed.div({
   enter: {
@@ -52,16 +78,16 @@ export const AboutChild = posed.div({
   exit: {
     scale: '0',
   },
-})
+});
 
 export const RouteContainer = posed.div({
-  enter: { 
+  enter: {
     opacity: '1',
-    delay: 300, 
-    beforeChildren: true 
+    delay: 300,
+    beforeChildren: true,
   },
-  exit: { 
+  exit: {
     opacity: '0',
     afterChildren: true,
-  }
+  },
 });
