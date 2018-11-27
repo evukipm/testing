@@ -1,11 +1,15 @@
-/* ---- INTRO ---- */
-.icon{
-  width:60px;
-  padding:20px;
+.intro-box{
+  width:50vw;
+  height:30vh;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-top:20px double transparent;
+  border-bottom:20px double transparent;
+  border-image: url('../images/punk.jpg') 50 round;
 }
-.intro input{
-  background:#000;
-  color:var(--yellow);
+.button-intro{
+  display:flex;
+  justify-content: space-around;
 }
-
-

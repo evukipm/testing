@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { PoseGroup } from 'react-pose';
 
 import './stylesheets/App.css';
+import Background from './components/background';
 
 import Navbar from './components/Navbar';
 import Intro from './pages/Intro';
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <Route render={({ location }) => (
         <div>
+          <Background />
           <PoseGroup>
             <RouteContainer key={location.pathname}>
               <Switch location={location}>

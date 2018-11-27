@@ -1,6 +1,8 @@
 :root{
   --yellow:#F1F42E;
-  --red:#ba1d1d;
+  --red:rgb(186, 29, 29);
+  --white:#F9F9F9;
+  --black:#474554;
 }
 body {
   margin: 0;
@@ -8,22 +10,18 @@ body {
   width:100vw;
   height:100vh;
   overflow:hidden;
-  color:#0a0a0a;
   transition: 1s;
 }
 
-.intro{
-  background-image: linear-gradient(to left bottom, #2a364a, #303a4f, #363d54, #3d4159, #44445e);
+.light-theme{
+  background-image: radial-gradient(circle, #f9f9f9, #f2f2f3, #eaebed, #e2e4e8, #dadde2);
+  color:var(--black);
   transition: 1s;
 }
 
-.intention{
-  background-image: linear-gradient(to left bottom, #283446, #2E374A, #343A4E, #3B3F54, #424258);
-  transition: 1s;
-}
-
-.scared{
-  background-image: linear-gradient(to left bottom, #1D2533, #1F2533, #2A2F3F, #272A38, #2F2F3F);
+.dark-theme{
+  background-image: radial-gradient(circle, #2b2a2e, #3b3b3e, #4d4c4e, #5e5e5f, #717171);
+  color:var(--white);
   transition: 1s;
 }
 
@@ -70,10 +68,15 @@ input:focus{
   margin:0 auto;
 }
 
-.button{
+button{
+  display:block;
   background:none;
   border:none;
   cursor:pointer;
+}
+
+button:focus{
+  outline:none;
 }
 
 .container{

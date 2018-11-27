@@ -3,50 +3,41 @@ import React, { Component } from 'react';
 import { IntroBox, IntroChild } from '../components/motions';
 import '../stylesheets/intro.css';
 
-import thunderUrl from '../images/thunderbolt.svg';
-
 class Intro extends Component {
-
   state = {
-    visitor: '',
+    theme: true,
   }
 
-  componentDidMount () {
-    document.body.className="intro"
+  componentDidMount() {
+    document.body.className = 'light-theme';
   }
 
-  handleInput = e => {
-    const {name, value} = e.target
-    this.setState({
-      [name]: value,
-    });
+  onDark = () => {
+    document.body.className = 'dark-theme';
+    this.setState({theme: false})
   }
 
-  handleSubmit = e => {
-    e.preventDefault();
-    const { visitor } = this.state
-    this.props.history.push({
-      pathname: '/intentions',
-      state: { visitor },
-    });
+  onLight = () => {
+    document.body.className = 'light-theme';
+    this.setState({theme: true})
   }
 
   render() {
+    const {theme} = this.state
     return (
       <div>
         <IntroBox className="container">
-          <IntroChild>
-            <h1>Hi, visitor!</h1>
-          </IntroChild>
-          <IntroChild>
-            <form onSubmit={this.handleSubmit}>
-              <input name="visitor" onChange={this.handleInput} type="text" placeholder="Who are you?" />
-              <label>
-                <input type="submit" className="invisible" />
-                <img className="block-image icon" src={thunderUrl} alt="thunderbolt" />
-              </label>
-            </form>
-          </IntroChild>
+          <div className="intro-box">
+            <IntroChild>
+              <p>Fullstack web developer, writer and punk lover</p>
+            </IntroChild>
+            <IntroChild>
+              <h1>Eva Pérez</h1>
+            </IntroChild>
+            <IntroChild className="button-intro">
+            {theme ? <button onClick={this.onDark}>Dark mode</button> : <button onClick={this.onLight}>Light mode</button>}
+            </IntroChild>
+          </div>
         </IntroBox>
       </div>
     );
